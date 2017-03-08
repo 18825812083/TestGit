@@ -1,0 +1,9 @@
+E:\学习资料\数据库设计\MySelfFrame\MySelfFrame\MySelf_DataDAL\obj\Debug\MySelf_DataDAL.csprojResolveAssemblyReference.cache
+E:\学习资料\数据库设计\MySelfFrame\MySelfFrame\MySelf_DataDAL\bin\Debug\MySelf_DataDAL.dll
+E:\学习资料\数据库设计\MySelfFrame\MySelfFrame\MySelf_DataDAL\bin\Debug\MySelf_DataDAL.pdb
+E:\学习资料\数据库设计\MySelfFrame\MySelfFrame\MySelf_DataDAL\bin\Debug\EntityFramework.dll
+E:\学习资料\数据库设计\MySelfFrame\MySelfFrame\MySelf_DataDAL\bin\Debug\MySelfDataModel.dll
+E:\学习资料\数据库设计\MySelfFrame\MySelfFrame\MySelf_DataDAL\bin\Debug\MySelfDataModel.pdb
+E:\学习资料\数据库设计\MySelfFrame\MySelfFrame\MySelf_DataDAL\bin\Debug\EntityFramework.xml
+E:\学习资料\数据库设计\MySelfFrame\MySelfFrame\MySelf_DataDAL\obj\Debug\MySelf_DataDAL.dll
+E:\学习资料\数据库设计\MySelfFrame\MySelfFrame\MySelf_DataDAL\obj\Debug\MySelf_DataDAL.pdb

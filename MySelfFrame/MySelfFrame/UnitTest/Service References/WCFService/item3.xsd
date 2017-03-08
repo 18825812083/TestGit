@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/XDL.Framework.Service" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/XDL.Framework.Service" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://127.0.0.1:8889/XDL.Framework.Service/Service/?xsd=xsd4" namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+  <xs:simpleType name="DocumentOperationStates">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="成功" />
+      <xs:enumeration value="正常" />
+      <xs:enumeration value="错误" />
+      <xs:enumeration value="关键字重复" />
+      <xs:enumeration value="写入失败" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="DocumentOperationStates" nillable="true" type="tns:DocumentOperationStates" />
+  <xs:simpleType name="SubjectOperationStates">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="成功" />
+      <xs:enumeration value="正常" />
+      <xs:enumeration value="错误" />
+      <xs:enumeration value="与编号规则不符" />
+      <xs:enumeration value="关键字重复" />
+      <xs:enumeration value="写入失败" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="SubjectOperationStates" nillable="true" type="tns:SubjectOperationStates" />
+  <xs:simpleType name="ClientType">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="PC" />
+      <xs:enumeration value="Logistics" />
+      <xs:enumeration value="PDA" />
+      <xs:enumeration value="Web" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="ClientType" nillable="true" type="tns:ClientType" />
+  <xs:complexType name="UserInfo">
+    <xs:sequence>
+      <xs:element xmlns:q1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="AuthorizeList" nillable="true" type="q1:ArrayOfstring" />
+      <xs:element minOccurs="0" name="DepartmentID" type="xs:int" />
+      <xs:element minOccurs="0" name="DepartmentName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="DepartmentNo" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="EmployeeID" type="xs:int" />
+      <xs:element minOccurs="0" name="EmployeeName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="EmployeeNo" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="OrganID" type="xs:int" />
+      <xs:element minOccurs="0" name="OrganName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="OrganNo" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Password" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="RoleID" type="xs:int" />
+      <xs:element minOccurs="0" name="RoleName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="RoleNo" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="UserID" type="xs:int" />
+      <xs:element minOccurs="0" name="UserName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="UserNo" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="UserInfo" nillable="true" type="tns:UserInfo" />
+  <xs:simpleType name="UserOperationStates">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="正常" />
+      <xs:enumeration value="录入错误" />
+      <xs:enumeration value="用户不存在" />
+      <xs:enumeration value="用户已存在" />
+      <xs:enumeration value="用户使用中" />
+      <xs:enumeration value="职员信息无效" />
+      <xs:enumeration value="角色无效" />
+      <xs:enumeration value="写入失败" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="UserOperationStates" nillable="true" type="tns:UserOperationStates" />
+  <xs:simpleType name="LogTypes">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="记录" />
+      <xs:enumeration value="警告" />
+      <xs:enumeration value="错误" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="LogTypes" nillable="true" type="tns:LogTypes" />
+  <xs:simpleType name="RoleOperationStates">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="正常" />
+      <xs:enumeration value="错误" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="RoleOperationStates" nillable="true" type="tns:RoleOperationStates" />
+  <xs:simpleType name="DownFileType">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="PCClient" />
+      <xs:enumeration value="PDAClient" />
+      <xs:enumeration value="File" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="DownFileType" nillable="true" type="tns:DownFileType" />
+  <xs:simpleType name="BarcodeOperationStates">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="正常" />
+      <xs:enumeration value="写入失败" />
+      <xs:enumeration value="错误" />
+      <xs:enumeration value="关键字重复" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="BarcodeOperationStates" nillable="true" type="tns:BarcodeOperationStates" />
+</xs:schema>

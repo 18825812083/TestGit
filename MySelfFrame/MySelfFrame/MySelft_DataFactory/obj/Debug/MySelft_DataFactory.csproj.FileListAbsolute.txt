@@ -1,0 +1,5 @@
+E:\学习资料\数据库设计\MySelfFrame\MySelfFrame\MySelft_DataFactory\bin\Debug\MySelft_DataFactory.dll
+E:\学习资料\数据库设计\MySelfFrame\MySelfFrame\MySelft_DataFactory\bin\Debug\MySelft_DataFactory.pdb
+E:\学习资料\数据库设计\MySelfFrame\MySelfFrame\MySelft_DataFactory\obj\Debug\MySelft_DataFactory.csprojResolveAssemblyReference.cache
+E:\学习资料\数据库设计\MySelfFrame\MySelfFrame\MySelft_DataFactory\obj\Debug\MySelft_DataFactory.dll
+E:\学习资料\数据库设计\MySelfFrame\MySelfFrame\MySelft_DataFactory\obj\Debug\MySelft_DataFactory.pdb

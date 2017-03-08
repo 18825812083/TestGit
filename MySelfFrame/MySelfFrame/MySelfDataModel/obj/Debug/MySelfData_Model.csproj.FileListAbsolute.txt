@@ -1,0 +1,10 @@
+E:\学习资料\数据库设计\MySelfFrame\MySelfFrame\MySelfDataModel\bin\Debug\MySelfDataModel.dll.config
+E:\学习资料\数据库设计\MySelfFrame\MySelfFrame\MySelfDataModel\bin\Debug\MySelfDataModel.dll
+E:\学习资料\数据库设计\MySelfFrame\MySelfFrame\MySelfDataModel\bin\Debug\MySelfDataModel.pdb
+E:\学习资料\数据库设计\MySelfFrame\MySelfFrame\MySelfDataModel\bin\Debug\EntityFramework.dll
+E:\学习资料\数据库设计\MySelfFrame\MySelfFrame\MySelfDataModel\bin\Debug\EntityFramework.SqlServer.dll
+E:\学习资料\数据库设计\MySelfFrame\MySelfFrame\MySelfDataModel\bin\Debug\EntityFramework.xml
+E:\学习资料\数据库设计\MySelfFrame\MySelfFrame\MySelfDataModel\bin\Debug\EntityFramework.SqlServer.xml
+E:\学习资料\数据库设计\MySelfFrame\MySelfFrame\MySelfDataModel\obj\Debug\MySelfData_Model.csprojResolveAssemblyReference.cache
+E:\学习资料\数据库设计\MySelfFrame\MySelfFrame\MySelfDataModel\obj\Debug\MySelfDataModel.dll
+E:\学习资料\数据库设计\MySelfFrame\MySelfFrame\MySelfDataModel\obj\Debug\MySelfDataModel.pdb

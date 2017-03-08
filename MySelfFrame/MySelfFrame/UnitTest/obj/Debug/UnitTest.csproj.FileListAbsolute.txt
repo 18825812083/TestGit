@@ -1,0 +1,8 @@
+E:\学习资料\数据库设计\MySelfFrame\MySelfFrame\UnitTest\bin\Debug\UnitTest.exe.config
+E:\学习资料\数据库设计\MySelfFrame\MySelfFrame\UnitTest\bin\Debug\UnitTest.exe
+E:\学习资料\数据库设计\MySelfFrame\MySelfFrame\UnitTest\bin\Debug\UnitTest.pdb
+E:\学习资料\数据库设计\MySelfFrame\MySelfFrame\UnitTest\bin\Debug\MySelft_DataFactory.dll
+E:\学习资料\数据库设计\MySelfFrame\MySelfFrame\UnitTest\bin\Debug\MySelft_DataFactory.pdb
+E:\学习资料\数据库设计\MySelfFrame\MySelfFrame\UnitTest\obj\Debug\UnitTest.csprojResolveAssemblyReference.cache
+E:\学习资料\数据库设计\MySelfFrame\MySelfFrame\UnitTest\obj\Debug\UnitTest.exe
+E:\学习资料\数据库设计\MySelfFrame\MySelfFrame\UnitTest\obj\Debug\UnitTest.pdb

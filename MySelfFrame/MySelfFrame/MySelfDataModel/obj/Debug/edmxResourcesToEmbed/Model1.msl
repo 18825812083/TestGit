@@ -1,0 +1,796 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="LGDataBaseModelStoreContainer" CdmEntityContainer="LGDataBaseEntities2">
+    <EntitySetMapping Name="AcBucket">
+      <EntityTypeMapping TypeName="LGDataBaseModel.AcBucket">
+        <MappingFragment StoreEntitySet="AcBucket">
+          <ScalarProperty Name="C_T" ColumnName="_T" />
+          <ScalarProperty Name="Barcode" ColumnName="Barcode" />
+          <ScalarProperty Name="ProductDate" ColumnName="ProductDate" />
+          <ScalarProperty Name="State" ColumnName="State" />
+          <ScalarProperty Name="OldBarcode" ColumnName="OldBarcode" />
+          <ScalarProperty Name="TurnoverTimes" ColumnName="TurnoverTimes" />
+          <ScalarProperty Name="CreateTime" ColumnName="CreateTime" />
+          <ScalarProperty Name="CreatorID" ColumnName="CreatorID" />
+          <ScalarProperty Name="OperateTime" ColumnName="OperateTime" />
+          <ScalarProperty Name="OperatorID" ColumnName="OperatorID" />
+          <ScalarProperty Name="Remark" ColumnName="Remark" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="AcBucketRecord">
+      <EntityTypeMapping TypeName="LGDataBaseModel.AcBucketRecord">
+        <MappingFragment StoreEntitySet="AcBucketRecord">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Barcode" ColumnName="Barcode" />
+          <ScalarProperty Name="BusinessTypes" ColumnName="BusinessTypes" />
+          <ScalarProperty Name="Remark" ColumnName="Remark" />
+          <ScalarProperty Name="OperateTime" ColumnName="OperateTime" />
+          <ScalarProperty Name="OperatorID" ColumnName="OperatorID" />
+          <ScalarProperty Name="C_T" ColumnName="_T" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="AcCheckBatch">
+      <EntityTypeMapping TypeName="LGDataBaseModel.AcCheckBatch">
+        <MappingFragment StoreEntitySet="AcCheckBatch">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="ShiftID" ColumnName="ShiftID" />
+          <ScalarProperty Name="ProductionLineID" ColumnName="ProductionLineID" />
+          <ScalarProperty Name="ProductID" ColumnName="ProductID" />
+          <ScalarProperty Name="CreaterID" ColumnName="CreaterID" />
+          <ScalarProperty Name="CreateTime" ColumnName="CreateTime" />
+          <ScalarProperty Name="Conclusion" ColumnName="Conclusion" />
+          <ScalarProperty Name="CheckerID" ColumnName="CheckerID" />
+          <ScalarProperty Name="CheckTime" ColumnName="CheckTime" />
+          <ScalarProperty Name="Remark" ColumnName="Remark" />
+          <ScalarProperty Name="C_T" ColumnName="_T" />
+          <ScalarProperty Name="State" ColumnName="State" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="AcCheckItem">
+      <EntityTypeMapping TypeName="LGDataBaseModel.AcCheckItem">
+        <MappingFragment StoreEntitySet="AcCheckItem">
+          <ScalarProperty Name="CheckBatchID" ColumnName="CheckBatchID" />
+          <ScalarProperty Name="Barcode" ColumnName="Barcode" />
+          <ScalarProperty Name="CheckResult" ColumnName="CheckResult" />
+          <ScalarProperty Name="Remark" ColumnName="Remark" />
+          <ScalarProperty Name="C_T" ColumnName="_T" />
+          <ScalarProperty Name="SamplingType" ColumnName="SamplingType" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="AcEquipment">
+      <EntityTypeMapping TypeName="LGDataBaseModel.AcEquipment">
+        <MappingFragment StoreEntitySet="AcEquipment">
+          <ScalarProperty Name="Barcode" ColumnName="Barcode" />
+          <ScalarProperty Name="EquipmentID" ColumnName="EquipmentID" />
+          <ScalarProperty Name="State" ColumnName="State" />
+          <ScalarProperty Name="MaintenanceTime" ColumnName="MaintenanceTime" />
+          <ScalarProperty Name="ProducingAreas" ColumnName="ProducingAreas" />
+          <ScalarProperty Name="ProductionDate" ColumnName="ProductionDate" />
+          <ScalarProperty Name="SupplierID" ColumnName="SupplierID" />
+          <ScalarProperty Name="LinkMan" ColumnName="LinkMan" />
+          <ScalarProperty Name="LinkTel" ColumnName="LinkTel" />
+          <ScalarProperty Name="Department" ColumnName="Department" />
+          <ScalarProperty Name="UserID" ColumnName="UserID" />
+          <ScalarProperty Name="PurchaseDate" ColumnName="PurchaseDate" />
+          <ScalarProperty Name="OperatorID" ColumnName="OperatorID" />
+          <ScalarProperty Name="OperateTime" ColumnName="OperateTime" />
+          <ScalarProperty Name="Remark" ColumnName="Remark" />
+          <ScalarProperty Name="C_T" ColumnName="_T" />
+          <ScalarProperty Name="ProofID" ColumnName="ProofID" />
+          <ScalarProperty Name="DepartmentID" ColumnName="DepartmentID" />
+          <ScalarProperty Name="Batch" ColumnName="Batch" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="AcEquipmentManage">
+      <EntityTypeMapping TypeName="LGDataBaseModel.AcEquipmentManage">
+        <MappingFragment StoreEntitySet="AcEquipmentManage">
+          <ScalarProperty Name="Barcode" ColumnName="Barcode" />
+          <ScalarProperty Name="ManageMan" ColumnName="ManageMan" />
+          <ScalarProperty Name="ManageTime" ColumnName="ManageTime" />
+          <ScalarProperty Name="RecordMan" ColumnName="RecordMan" />
+          <ScalarProperty Name="RecordTime" ColumnName="RecordTime" />
+          <ScalarProperty Name="ManageContent" ColumnName="ManageContent" />
+          <ScalarProperty Name="ManageType" ColumnName="ManageType" />
+          <ScalarProperty Name="Remark" ColumnName="Remark" />
+          <ScalarProperty Name="C_T" ColumnName="_T" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="AcEquipmentManage_LS">
+      <EntityTypeMapping TypeName="LGDataBaseModel.AcEquipmentManage_LS">
+        <MappingFragment StoreEntitySet="AcEquipmentManage_LS">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Barcode" ColumnName="Barcode" />
+          <ScalarProperty Name="ManageMan" ColumnName="ManageMan" />
+          <ScalarProperty Name="ManageTime" ColumnName="ManageTime" />
+          <ScalarProperty Name="RecordMan" ColumnName="RecordMan" />
+          <ScalarProperty Name="RecordTime" ColumnName="RecordTime" />
+          <ScalarProperty Name="ManageContent" ColumnName="ManageContent" />
+          <ScalarProperty Name="ManageType" ColumnName="ManageType" />
+          <ScalarProperty Name="Remark" ColumnName="Remark" />
+          <ScalarProperty Name="C_T" ColumnName="_T" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="AcEquipmentRecord">
+      <EntityTypeMapping TypeName="LGDataBaseModel.AcEquipmentRecord">
+        <MappingFragment StoreEntitySet="AcEquipmentRecord">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Barcode" ColumnName="Barcode" />
+          <ScalarProperty Name="State" ColumnName="State" />
+          <ScalarProperty Name="EquipmentID" ColumnName="EquipmentID" />
+          <ScalarProperty Name="OperatorID" ColumnName="OperatorID" />
+          <ScalarProperty Name="OperateTime" ColumnName="OperateTime" />
+          <ScalarProperty Name="Remark" ColumnName="Remark" />
+          <ScalarProperty Name="ProofID" ColumnName="ProofID" />
+          <ScalarProperty Name="BusinessTypes" ColumnName="BusinessTypes" />
+          <ScalarProperty Name="C_T" ColumnName="_T" />
+          <ScalarProperty Name="DepartmentID" ColumnName="DepartmentID" />
+          <ScalarProperty Name="UserID" ColumnName="UserID" />
+          <ScalarProperty Name="OperateRemark" ColumnName="OperateRemark" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="AcEquipmentRepair">
+      <EntityTypeMapping TypeName="LGDataBaseModel.AcEquipmentRepair">
+        <MappingFragment StoreEntitySet="AcEquipmentRepair">
+          <ScalarProperty Name="Barcode" ColumnName="Barcode" />
+          <ScalarProperty Name="RepairMan" ColumnName="RepairMan" />
+          <ScalarProperty Name="RepairTime" ColumnName="RepairTime" />
+          <ScalarProperty Name="RepairContent" ColumnName="RepairContent" />
+          <ScalarProperty Name="ReplaceParts" ColumnName="ReplaceParts" />
+          <ScalarProperty Name="RecordMan" ColumnName="RecordMan" />
+          <ScalarProperty Name="RecordTime" ColumnName="RecordTime" />
+          <ScalarProperty Name="Remark" ColumnName="Remark" />
+          <ScalarProperty Name="C_T" ColumnName="_T" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="AcEquipmentRepair_LS">
+      <EntityTypeMapping TypeName="LGDataBaseModel.AcEquipmentRepair_LS">
+        <MappingFragment StoreEntitySet="AcEquipmentRepair_LS">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Barcode" ColumnName="Barcode" />
+          <ScalarProperty Name="RepairMan" ColumnName="RepairMan" />
+          <ScalarProperty Name="RepairTime" ColumnName="RepairTime" />
+          <ScalarProperty Name="RepairContent" ColumnName="RepairContent" />
+          <ScalarProperty Name="ReplaceParts" ColumnName="ReplaceParts" />
+          <ScalarProperty Name="RecordMan" ColumnName="RecordMan" />
+          <ScalarProperty Name="RecordTime" ColumnName="RecordTime" />
+          <ScalarProperty Name="Remark" ColumnName="Remark" />
+          <ScalarProperty Name="C_T" ColumnName="_T" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="AcProduction">
+      <EntityTypeMapping TypeName="LGDataBaseModel.AcProduction">
+        <MappingFragment StoreEntitySet="AcProduction">
+          <ScalarProperty Name="Barcode" ColumnName="Barcode" />
+          <ScalarProperty Name="ProductID" ColumnName="ProductID" />
+          <ScalarProperty Name="ProductionLineID" ColumnName="ProductionLineID" />
+          <ScalarProperty Name="ProductionDate" ColumnName="ProductionDate" />
+          <ScalarProperty Name="ShiftID" ColumnName="ShiftID" />
+          <ScalarProperty Name="State" ColumnName="State" />
+          <ScalarProperty Name="CheckBatchID" ColumnName="CheckBatchID" />
+          <ScalarProperty Name="CheckerID" ColumnName="CheckerID" />
+          <ScalarProperty Name="QueryCount" ColumnName="QueryCount" />
+          <ScalarProperty Name="LastQueryTime" ColumnName="LastQueryTime" />
+          <ScalarProperty Name="C_T" ColumnName="_T" />
+          <ScalarProperty Name="Remark" ColumnName="Remark" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="AcProductionRecord">
+      <EntityTypeMapping TypeName="LGDataBaseModel.AcProductionRecord">
+        <MappingFragment StoreEntitySet="AcProductionRecord">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Barcode" ColumnName="Barcode" />
+          <ScalarProperty Name="ProductID" ColumnName="ProductID" />
+          <ScalarProperty Name="ProductionLineID" ColumnName="ProductionLineID" />
+          <ScalarProperty Name="ProductionDate" ColumnName="ProductionDate" />
+          <ScalarProperty Name="ShiftID" ColumnName="ShiftID" />
+          <ScalarProperty Name="OperatorID" ColumnName="OperatorID" />
+          <ScalarProperty Name="OperateTime" ColumnName="OperateTime" />
+          <ScalarProperty Name="BusinessTypes" ColumnName="BusinessTypes" />
+          <ScalarProperty Name="Remark" ColumnName="Remark" />
+          <ScalarProperty Name="OtherID" ColumnName="OtherID" />
+          <ScalarProperty Name="C_T" ColumnName="_T" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="AcProof">
+      <EntityTypeMapping TypeName="LGDataBaseModel.AcProof">
+        <MappingFragment StoreEntitySet="AcProof">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="ProofState" ColumnName="ProofState" />
+          <ScalarProperty Name="ProofNo" ColumnName="ProofNo" />
+          <ScalarProperty Name="ProofType" ColumnName="ProofType" />
+          <ScalarProperty Name="ProofDate" ColumnName="ProofDate" />
+          <ScalarProperty Name="OutsideOrgID" ColumnName="OutsideOrgID" />
+          <ScalarProperty Name="CreaterId" ColumnName="CreaterId" />
+          <ScalarProperty Name="CreateTime" ColumnName="CreateTime" />
+          <ScalarProperty Name="CheckerID" ColumnName="CheckerID" />
+          <ScalarProperty Name="CheckTime" ColumnName="CheckTime" />
+          <ScalarProperty Name="Remark" ColumnName="Remark" />
+          <ScalarProperty Name="OrgID" ColumnName="OrgID" />
+          <ScalarProperty Name="C_T" ColumnName="_T" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="AcQueryRecord">
+      <EntityTypeMapping TypeName="LGDataBaseModel.AcQueryRecord">
+        <MappingFragment StoreEntitySet="AcQueryRecord">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Barcode" ColumnName="Barcode" />
+          <ScalarProperty Name="ProductID" ColumnName="ProductID" />
+          <ScalarProperty Name="ProductionLineID" ColumnName="ProductionLineID" />
+          <ScalarProperty Name="ProductionDate" ColumnName="ProductionDate" />
+          <ScalarProperty Name="ShiftID" ColumnName="ShiftID" />
+          <ScalarProperty Name="CheckBatchID" ColumnName="CheckBatchID" />
+          <ScalarProperty Name="QueryIP" ColumnName="QueryIP" />
+          <ScalarProperty Name="QueryTime" ColumnName="QueryTime" />
+          <ScalarProperty Name="C_T" ColumnName="_T" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="AcRepairParts">
+      <EntityTypeMapping TypeName="LGDataBaseModel.AcRepairParts">
+        <MappingFragment StoreEntitySet="AcRepairParts">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="PartsID" ColumnName="PartsID" />
+          <ScalarProperty Name="Amount" ColumnName="Amount" />
+          <ScalarProperty Name="Remark" ColumnName="Remark" />
+          <ScalarProperty Name="C_T" ColumnName="_T" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="AcShift">
+      <EntityTypeMapping TypeName="LGDataBaseModel.AcShift">
+        <MappingFragment StoreEntitySet="AcShift">
+          <ScalarProperty Name="C_T" ColumnName="_T" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="ProductionDate" ColumnName="ProductionDate" />
+          <ScalarProperty Name="Shift" ColumnName="Shift" />
+          <ScalarProperty Name="StartTime" ColumnName="StartTime" />
+          <ScalarProperty Name="EndTime" ColumnName="EndTime" />
+          <ScalarProperty Name="OperatorID" ColumnName="OperatorID" />
+          <ScalarProperty Name="State" ColumnName="State" />
+          <ScalarProperty Name="Remark" ColumnName="Remark" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="AcShiftPersonnel">
+      <EntityTypeMapping TypeName="LGDataBaseModel.AcShiftPersonnel">
+        <MappingFragment StoreEntitySet="AcShiftPersonnel">
+          <ScalarProperty Name="ShiftID" ColumnName="ShiftID" />
+          <ScalarProperty Name="PersonnelID" ColumnName="PersonnelID" />
+          <ScalarProperty Name="StartTime" ColumnName="StartTime" />
+          <ScalarProperty Name="EndTime" ColumnName="EndTime" />
+          <ScalarProperty Name="ProductionLineID" ColumnName="ProductionLineID" />
+          <ScalarProperty Name="C_T" ColumnName="_T" />
+          <ScalarProperty Name="State" ColumnName="State" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="AcYield">
+      <EntityTypeMapping TypeName="LGDataBaseModel.AcYield">
+        <MappingFragment StoreEntitySet="AcYield">
+          <ScalarProperty Name="C_T" ColumnName="_T" />
+          <ScalarProperty Name="ProductionLineID" ColumnName="ProductionLineID" />
+          <ScalarProperty Name="ShiftID" ColumnName="ShiftID" />
+          <ScalarProperty Name="ProductID" ColumnName="ProductID" />
+          <ScalarProperty Name="Yield" ColumnName="Yield" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="DcEquipment">
+      <EntityTypeMapping TypeName="LGDataBaseModel.DcEquipment">
+        <MappingFragment StoreEntitySet="DcEquipment">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Code" ColumnName="Code" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="ShortName" ColumnName="ShortName" />
+          <ScalarProperty Name="Mnemonic" ColumnName="Mnemonic" />
+          <ScalarProperty Name="EquipmentTypeID" ColumnName="EquipmentTypeID" />
+          <ScalarProperty Name="Model" ColumnName="Model" />
+          <ScalarProperty Name="Band" ColumnName="Band" />
+          <ScalarProperty Name="Manufacturer" ColumnName="Manufacturer" />
+          <ScalarProperty Name="MaintenanceCycle" ColumnName="MaintenanceCycle" />
+          <ScalarProperty Name="Warning" ColumnName="Warning" />
+          <ScalarProperty Name="Remark" ColumnName="Remark" />
+          <ScalarProperty Name="Disable" ColumnName="Disable" />
+          <ScalarProperty Name="del" ColumnName="del" />
+          <ScalarProperty Name="C_T" ColumnName="_T" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="DcOrganization">
+      <EntityTypeMapping TypeName="LGDataBaseModel.DcOrganization">
+        <MappingFragment StoreEntitySet="DcOrganization">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Code" ColumnName="Code" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="ShortName" ColumnName="ShortName" />
+          <ScalarProperty Name="Mnemonic" ColumnName="Mnemonic" />
+          <ScalarProperty Name="AreaID" ColumnName="AreaID" />
+          <ScalarProperty Name="OrganizationType" ColumnName="OrganizationType" />
+          <ScalarProperty Name="Address" ColumnName="Address" />
+          <ScalarProperty Name="Zip" ColumnName="Zip" />
+          <ScalarProperty Name="Contact" ColumnName="Contact" />
+          <ScalarProperty Name="Telephone" ColumnName="Telephone" />
+          <ScalarProperty Name="Mobile" ColumnName="Mobile" />
+          <ScalarProperty Name="Fax" ColumnName="Fax" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="WebSite" ColumnName="WebSite" />
+          <ScalarProperty Name="bank" ColumnName="bank" />
+          <ScalarProperty Name="Account" ColumnName="Account" />
+          <ScalarProperty Name="Tax" ColumnName="Tax" />
+          <ScalarProperty Name="LegalPerson" ColumnName="LegalPerson" />
+          <ScalarProperty Name="RegisteredCapital" ColumnName="RegisteredCapital" />
+          <ScalarProperty Name="Manager" ColumnName="Manager" />
+          <ScalarProperty Name="Remark" ColumnName="Remark" />
+          <ScalarProperty Name="Disable" ColumnName="Disable" />
+          <ScalarProperty Name="del" ColumnName="del" />
+          <ScalarProperty Name="C_T" ColumnName="_T" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="DcPersonnel">
+      <EntityTypeMapping TypeName="LGDataBaseModel.DcPersonnel">
+        <MappingFragment StoreEntitySet="DcPersonnel">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Code" ColumnName="Code" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="ShortName" ColumnName="ShortName" />
+          <ScalarProperty Name="Mnemonic" ColumnName="Mnemonic" />
+          <ScalarProperty Name="OrganizationID" ColumnName="OrganizationID" />
+          <ScalarProperty Name="DepartmentID" ColumnName="DepartmentID" />
+          <ScalarProperty Name="Position" ColumnName="Position" />
+          <ScalarProperty Name="DocumentType" ColumnName="DocumentType" />
+          <ScalarProperty Name="DocumentNumber" ColumnName="DocumentNumber" />
+          <ScalarProperty Name="TelephoneNumber" ColumnName="TelephoneNumber" />
+          <ScalarProperty Name="MobileNumber" ColumnName="MobileNumber" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="Address" ColumnName="Address" />
+          <ScalarProperty Name="PostCode" ColumnName="PostCode" />
+          <ScalarProperty Name="Remark" ColumnName="Remark" />
+          <ScalarProperty Name="Disable" ColumnName="Disable" />
+          <ScalarProperty Name="del" ColumnName="del" />
+          <ScalarProperty Name="C_T" ColumnName="_T" />
+          <ScalarProperty Name="Barcode" ColumnName="Barcode" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="DcProduct">
+      <EntityTypeMapping TypeName="LGDataBaseModel.DcProduct">
+        <MappingFragment StoreEntitySet="DcProduct">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Code" ColumnName="Code" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="ShortName" ColumnName="ShortName" />
+          <ScalarProperty Name="Mnemonic" ColumnName="Mnemonic" />
+          <ScalarProperty Name="ProductTypeID" ColumnName="ProductTypeID" />
+          <ScalarProperty Name="Model" ColumnName="Model" />
+          <ScalarProperty Name="MadeIn" ColumnName="MadeIn" />
+          <ScalarProperty Name="Manufacturer" ColumnName="Manufacturer" />
+          <ScalarProperty Name="SPBarcode" ColumnName="SPBarcode" />
+          <ScalarProperty Name="Remark" ColumnName="Remark" />
+          <ScalarProperty Name="Disable" ColumnName="Disable" />
+          <ScalarProperty Name="del" ColumnName="del" />
+          <ScalarProperty Name="C_T" ColumnName="_T" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="DcProductionLine">
+      <EntityTypeMapping TypeName="LGDataBaseModel.DcProductionLine">
+        <MappingFragment StoreEntitySet="DcProductionLine">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Code" ColumnName="Code" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="ShortName" ColumnName="ShortName" />
+          <ScalarProperty Name="Mnemonic" ColumnName="Mnemonic" />
+          <ScalarProperty Name="ProductionLineTypeID" ColumnName="ProductionLineTypeID" />
+          <ScalarProperty Name="ProductID" ColumnName="ProductID" />
+          <ScalarProperty Name="Remark" ColumnName="Remark" />
+          <ScalarProperty Name="Disable" ColumnName="Disable" />
+          <ScalarProperty Name="del" ColumnName="del" />
+          <ScalarProperty Name="C_T" ColumnName="_T" />
+          <ScalarProperty Name="ScanIP1" ColumnName="ScanIP1" />
+          <ScalarProperty Name="ScanIP2" ColumnName="ScanIP2" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="LiBucketState">
+      <EntityTypeMapping TypeName="LGDataBaseModel.LiBucketState">
+        <MappingFragment StoreEntitySet="LiBucketState">
+          <ScalarProperty Name="BucketState" ColumnName="BucketState" />
+          <ScalarProperty Name="OrderKey" ColumnName="OrderKey" />
+          <ScalarProperty Name="C_T" ColumnName="_T" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="LiCheckState">
+      <EntityTypeMapping TypeName="LGDataBaseModel.LiCheckState">
+        <MappingFragment StoreEntitySet="LiCheckState">
+          <ScalarProperty Name="CheckState" ColumnName="CheckState" />
+          <ScalarProperty Name="OrderKey" ColumnName="OrderKey" />
+          <ScalarProperty Name="C_T" ColumnName="_T" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="LiEquipmentState">
+      <EntityTypeMapping TypeName="LGDataBaseModel.LiEquipmentState">
+        <MappingFragment StoreEntitySet="LiEquipmentState">
+          <ScalarProperty Name="EquipmentState" ColumnName="EquipmentState" />
+          <ScalarProperty Name="OrderKey" ColumnName="OrderKey" />
+          <ScalarProperty Name="C_T" ColumnName="_T" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="LiFaultyAddress">
+      <EntityTypeMapping TypeName="LGDataBaseModel.LiFaultyAddress">
+        <MappingFragment StoreEntitySet="LiFaultyAddress">
+          <ScalarProperty Name="FaultyAddress" ColumnName="FaultyAddress" />
+          <ScalarProperty Name="OrderKey" ColumnName="OrderKey" />
+          <ScalarProperty Name="C_T" ColumnName="_T" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="LiFaultyType">
+      <EntityTypeMapping TypeName="LGDataBaseModel.LiFaultyType">
+        <MappingFragment StoreEntitySet="LiFaultyType">
+          <ScalarProperty Name="FaultyType" ColumnName="FaultyType" />
+          <ScalarProperty Name="OrderKey" ColumnName="OrderKey" />
+          <ScalarProperty Name="C_T" ColumnName="_T" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="LiOrganizationType">
+      <EntityTypeMapping TypeName="LGDataBaseModel.LiOrganizationType">
+        <MappingFragment StoreEntitySet="LiOrganizationType">
+          <ScalarProperty Name="OrganizationType" ColumnName="OrganizationType" />
+          <ScalarProperty Name="OrderKey" ColumnName="OrderKey" />
+          <ScalarProperty Name="C_T" ColumnName="_T" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="LiSamplingType">
+      <EntityTypeMapping TypeName="LGDataBaseModel.LiSamplingType">
+        <MappingFragment StoreEntitySet="LiSamplingType">
+          <ScalarProperty Name="SamplingType" ColumnName="SamplingType" />
+          <ScalarProperty Name="OrderKey" ColumnName="OrderKey" />
+          <ScalarProperty Name="C_T" ColumnName="_T" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="LiShift">
+      <EntityTypeMapping TypeName="LGDataBaseModel.LiShift">
+        <MappingFragment StoreEntitySet="LiShift">
+          <ScalarProperty Name="Shift" ColumnName="Shift" />
+          <ScalarProperty Name="OrderKey" ColumnName="OrderKey" />
+          <ScalarProperty Name="C_T" ColumnName="_T" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="LiYesNo">
+      <EntityTypeMapping TypeName="LGDataBaseModel.LiYesNo">
+        <MappingFragment StoreEntitySet="LiYesNo">
+          <ScalarProperty Name="YesNo" ColumnName="YesNo" />
+          <ScalarProperty Name="OrderKey" ColumnName="OrderKey" />
+          <ScalarProperty Name="C_T" ColumnName="_T" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PfRawInBarcode">
+      <EntityTypeMapping TypeName="LGDataBaseModel.PfRawInBarcode">
+        <MappingFragment StoreEntitySet="PfRawInBarcode">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="PID" ColumnName="PID" />
+          <ScalarProperty Name="DID" ColumnName="DID" />
+          <ScalarProperty Name="BarcodeType" ColumnName="BarcodeType" />
+          <ScalarProperty Name="Barcode" ColumnName="Barcode" />
+          <ScalarProperty Name="EquipmentID" ColumnName="EquipmentID" />
+          <ScalarProperty Name="ProducingAreas" ColumnName="ProducingAreas" />
+          <ScalarProperty Name="ProductionDate" ColumnName="ProductionDate" />
+          <ScalarProperty Name="Batch" ColumnName="Batch" />
+          <ScalarProperty Name="PersonID" ColumnName="PersonID" />
+          <ScalarProperty Name="Remark" ColumnName="Remark" />
+          <ScalarProperty Name="C_T" ColumnName="_T" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PfRawInDetail">
+      <EntityTypeMapping TypeName="LGDataBaseModel.PfRawInDetail">
+        <MappingFragment StoreEntitySet="PfRawInDetail">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="PID" ColumnName="PID" />
+          <ScalarProperty Name="EquipmentID" ColumnName="EquipmentID" />
+          <ScalarProperty Name="ProducingAreas" ColumnName="ProducingAreas" />
+          <ScalarProperty Name="ProductionDate" ColumnName="ProductionDate" />
+          <ScalarProperty Name="Batch" ColumnName="Batch" />
+          <ScalarProperty Name="PersonID" ColumnName="PersonID" />
+          <ScalarProperty Name="Amount" ColumnName="Amount" />
+          <ScalarProperty Name="LinkProofName" ColumnName="LinkProofName" />
+          <ScalarProperty Name="LinkProofNo" ColumnName="LinkProofNo" />
+          <ScalarProperty Name="Remark" ColumnName="Remark" />
+          <ScalarProperty Name="del" ColumnName="del" />
+          <ScalarProperty Name="C_T" ColumnName="_T" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PfRawInHead">
+      <EntityTypeMapping TypeName="LGDataBaseModel.PfRawInHead">
+        <MappingFragment StoreEntitySet="PfRawInHead">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="ProofCode" ColumnName="ProofCode" />
+          <ScalarProperty Name="ProofDate" ColumnName="ProofDate" />
+          <ScalarProperty Name="ProofState" ColumnName="ProofState" />
+          <ScalarProperty Name="OrgID" ColumnName="OrgID" />
+          <ScalarProperty Name="OutsideOrgID" ColumnName="OutsideOrgID" />
+          <ScalarProperty Name="OutsideManID" ColumnName="OutsideManID" />
+          <ScalarProperty Name="Contact" ColumnName="Contact" />
+          <ScalarProperty Name="OutsideManTel" ColumnName="OutsideManTel" />
+          <ScalarProperty Name="OutsideManPhone" ColumnName="OutsideManPhone" />
+          <ScalarProperty Name="Address" ColumnName="Address" />
+          <ScalarProperty Name="BusinessManID" ColumnName="BusinessManID" />
+          <ScalarProperty Name="RawInDate" ColumnName="RawInDate" />
+          <ScalarProperty Name="LinkProofName" ColumnName="LinkProofName" />
+          <ScalarProperty Name="LinkProofNo" ColumnName="LinkProofNo" />
+          <ScalarProperty Name="CreaterID" ColumnName="CreaterID" />
+          <ScalarProperty Name="CreateTime" ColumnName="CreateTime" />
+          <ScalarProperty Name="CheckTime" ColumnName="CheckTime" />
+          <ScalarProperty Name="CheckerID" ColumnName="CheckerID" />
+          <ScalarProperty Name="Remark" ColumnName="Remark" />
+          <ScalarProperty Name="C_T" ColumnName="_T" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SbArea">
+      <EntityTypeMapping TypeName="LGDataBaseModel.SbArea">
+        <MappingFragment StoreEntitySet="SbArea">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="PID" ColumnName="PID" />
+          <ScalarProperty Name="Code" ColumnName="Code" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="ShortName" ColumnName="ShortName" />
+          <ScalarProperty Name="Mnemonic" ColumnName="Mnemonic" />
+          <ScalarProperty Name="Remark" ColumnName="Remark" />
+          <ScalarProperty Name="Disable" ColumnName="Disable" />
+          <ScalarProperty Name="del" ColumnName="del" />
+          <ScalarProperty Name="C_T" ColumnName="_T" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SbDepartment">
+      <EntityTypeMapping TypeName="LGDataBaseModel.SbDepartment">
+        <MappingFragment StoreEntitySet="SbDepartment">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="PID" ColumnName="PID" />
+          <ScalarProperty Name="Code" ColumnName="Code" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="ShortName" ColumnName="ShortName" />
+          <ScalarProperty Name="Mnemonic" ColumnName="Mnemonic" />
+          <ScalarProperty Name="OrganizationID" ColumnName="OrganizationID" />
+          <ScalarProperty Name="Remark" ColumnName="Remark" />
+          <ScalarProperty Name="Disable" ColumnName="Disable" />
+          <ScalarProperty Name="del" ColumnName="del" />
+          <ScalarProperty Name="C_T" ColumnName="_T" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SbEquipment">
+      <EntityTypeMapping TypeName="LGDataBaseModel.SbEquipment">
+        <MappingFragment StoreEntitySet="SbEquipment">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="PID" ColumnName="PID" />
+          <ScalarProperty Name="Code" ColumnName="Code" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="ShortName" ColumnName="ShortName" />
+          <ScalarProperty Name="Mnemonic" ColumnName="Mnemonic" />
+          <ScalarProperty Name="Remark" ColumnName="Remark" />
+          <ScalarProperty Name="Disable" ColumnName="Disable" />
+          <ScalarProperty Name="del" ColumnName="del" />
+          <ScalarProperty Name="C_T" ColumnName="_T" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SbProduct">
+      <EntityTypeMapping TypeName="LGDataBaseModel.SbProduct">
+        <MappingFragment StoreEntitySet="SbProduct">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="PID" ColumnName="PID" />
+          <ScalarProperty Name="Code" ColumnName="Code" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="ShortName" ColumnName="ShortName" />
+          <ScalarProperty Name="Mnemonic" ColumnName="Mnemonic" />
+          <ScalarProperty Name="Remark" ColumnName="Remark" />
+          <ScalarProperty Name="Disable" ColumnName="Disable" />
+          <ScalarProperty Name="del" ColumnName="del" />
+          <ScalarProperty Name="C_T" ColumnName="_T" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SbProductionLine">
+      <EntityTypeMapping TypeName="LGDataBaseModel.SbProductionLine">
+        <MappingFragment StoreEntitySet="SbProductionLine">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="PID" ColumnName="PID" />
+          <ScalarProperty Name="Code" ColumnName="Code" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="ShortName" ColumnName="ShortName" />
+          <ScalarProperty Name="Mnemonic" ColumnName="Mnemonic" />
+          <ScalarProperty Name="Remark" ColumnName="Remark" />
+          <ScalarProperty Name="Disable" ColumnName="Disable" />
+          <ScalarProperty Name="del" ColumnName="del" />
+          <ScalarProperty Name="C_T" ColumnName="_T" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SyAuthorize">
+      <EntityTypeMapping TypeName="LGDataBaseModel.SyAuthorize">
+        <MappingFragment StoreEntitySet="SyAuthorize">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="PID" ColumnName="PID" />
+          <ScalarProperty Name="Code" ColumnName="Code" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Remark" ColumnName="Remark" />
+          <ScalarProperty Name="BelongsMenu" ColumnName="BelongsMenu" />
+          <ScalarProperty Name="OrderKey" ColumnName="OrderKey" />
+          <ScalarProperty Name="C_T" ColumnName="_T" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SyBarcodeTemplete">
+      <EntityTypeMapping TypeName="LGDataBaseModel.SyBarcodeTemplete">
+        <MappingFragment StoreEntitySet="SyBarcodeTemplete">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="BarcodeTemplete" ColumnName="BarcodeTemplete" />
+          <ScalarProperty Name="C_T" ColumnName="_T" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SyDefine">
+      <EntityTypeMapping TypeName="LGDataBaseModel.SyDefine">
+        <MappingFragment StoreEntitySet="SyDefine">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="PID" ColumnName="PID" />
+          <ScalarProperty Name="OrderKey" ColumnName="OrderKey" />
+          <ScalarProperty Name="FieldName" ColumnName="FieldName" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="Format" ColumnName="Format" />
+          <ScalarProperty Name="Visible" ColumnName="Visible" />
+          <ScalarProperty Name="NotNull" ColumnName="NotNull" />
+          <ScalarProperty Name="Width" ColumnName="Width" />
+          <ScalarProperty Name="Alignment" ColumnName="Alignment" />
+          <ScalarProperty Name="C_T" ColumnName="_T" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SyDefineGroup">
+      <EntityTypeMapping TypeName="LGDataBaseModel.SyDefineGroup">
+        <MappingFragment StoreEntitySet="SyDefineGroup">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="GroupName" ColumnName="GroupName" />
+          <ScalarProperty Name="CreaterID" ColumnName="CreaterID" />
+          <ScalarProperty Name="IsCommon" ColumnName="IsCommon" />
+          <ScalarProperty Name="Remark" ColumnName="Remark" />
+          <ScalarProperty Name="C_T" ColumnName="_T" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SyFiles">
+      <EntityTypeMapping TypeName="LGDataBaseModel.SyFiles">
+        <MappingFragment StoreEntitySet="SyFiles">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="TableModelName" ColumnName="TableModelName" />
+          <ScalarProperty Name="PID" ColumnName="PID" />
+          <ScalarProperty Name="SourceName" ColumnName="SourceName" />
+          <ScalarProperty Name="FileName" ColumnName="FileName" />
+          <ScalarProperty Name="FileSize" ColumnName="FileSize" />
+          <ScalarProperty Name="Remark" ColumnName="Remark" />
+          <ScalarProperty Name="SubmitEmployeeID" ColumnName="SubmitEmployeeID" />
+          <ScalarProperty Name="SubmitDate" ColumnName="SubmitDate" />
+          <ScalarProperty Name="C_T" ColumnName="_T" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SyLog">
+      <EntityTypeMapping TypeName="LGDataBaseModel.SyLog">
+        <MappingFragment StoreEntitySet="SyLog">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="LogTime" ColumnName="LogTime" />
+          <ScalarProperty Name="OperatorID" ColumnName="OperatorID" />
+          <ScalarProperty Name="Module" ColumnName="Module" />
+          <ScalarProperty Name="logType" ColumnName="logType" />
+          <ScalarProperty Name="Remark" ColumnName="Remark" />
+          <ScalarProperty Name="C_T" ColumnName="_T" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SyNumbers">
+      <EntityTypeMapping TypeName="LGDataBaseModel.SyNumbers">
+        <MappingFragment StoreEntitySet="SyNumbers">
+          <ScalarProperty Name="Prefix" ColumnName="Prefix" />
+          <ScalarProperty Name="NumberValue" ColumnName="NumberValue" />
+          <ScalarProperty Name="C_T" ColumnName="_T" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SyOptions">
+      <EntityTypeMapping TypeName="LGDataBaseModel.SyOptions">
+        <MappingFragment StoreEntitySet="SyOptions">
+          <ScalarProperty Name="SettingPath" ColumnName="SettingPath" />
+          <ScalarProperty Name="SettingValue" ColumnName="SettingValue" />
+          <ScalarProperty Name="C_T" ColumnName="_T" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SyReport">
+      <EntityTypeMapping TypeName="LGDataBaseModel.SyReport">
+        <MappingFragment StoreEntitySet="SyReport">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="ReportKey" ColumnName="ReportKey" />
+          <ScalarProperty Name="ReportName" ColumnName="ReportName" />
+          <ScalarProperty Name="ReportTemplate" ColumnName="ReportTemplate" />
+          <ScalarProperty Name="CreateDateTime" ColumnName="CreateDateTime" />
+          <ScalarProperty Name="UpdateDateTime" ColumnName="UpdateDateTime" />
+          <ScalarProperty Name="Enable" ColumnName="Enable" />
+          <ScalarProperty Name="SubmittedID" ColumnName="SubmittedID" />
+          <ScalarProperty Name="Del" ColumnName="Del" />
+          <ScalarProperty Name="C_T" ColumnName="_T" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SyReportCheck">
+      <EntityTypeMapping TypeName="LGDataBaseModel.SyReportCheck">
+        <MappingFragment StoreEntitySet="SyReportCheck">
+          <ScalarProperty Name="TransferID" ColumnName="TransferID" />
+          <ScalarProperty Name="ReportID" ColumnName="ReportID" />
+          <ScalarProperty Name="ReportKey" ColumnName="ReportKey" />
+          <ScalarProperty Name="C_T" ColumnName="_T" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SyRole">
+      <EntityTypeMapping TypeName="LGDataBaseModel.SyRole">
+        <MappingFragment StoreEntitySet="SyRole">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Code" ColumnName="Code" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Enabled" ColumnName="Enabled" />
+          <ScalarProperty Name="Del" ColumnName="Del" />
+          <ScalarProperty Name="C_T" ColumnName="_T" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SyRoleRight">
+      <EntityTypeMapping TypeName="LGDataBaseModel.SyRoleRight">
+        <MappingFragment StoreEntitySet="SyRoleRight">
+          <ScalarProperty Name="RoleID" ColumnName="RoleID" />
+          <ScalarProperty Name="RightID" ColumnName="RightID" />
+          <ScalarProperty Name="C_T" ColumnName="_T" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SyUser">
+      <EntityTypeMapping TypeName="LGDataBaseModel.SyUser">
+        <MappingFragment StoreEntitySet="SyUser">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Code" ColumnName="Code" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="OperatorID" ColumnName="OperatorID" />
+          <ScalarProperty Name="Password" ColumnName="Password" />
+          <ScalarProperty Name="RoleID" ColumnName="RoleID" />
+          <ScalarProperty Name="Enabled" ColumnName="Enabled" />
+          <ScalarProperty Name="Del" ColumnName="Del" />
+          <ScalarProperty Name="C_T" ColumnName="_T" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
